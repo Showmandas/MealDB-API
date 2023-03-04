@@ -49,6 +49,8 @@ const displayDetails=mealData=>{
     <div className="col-12">
     <h1 class="modal-title text-center fs-2 mb-5" id="mealDetailsLabel">${mealData.strMeal}</h1>
     <hr>
+    <div class="row p-4">
+    <div class="col-6">
     <h4>Area: ${mealData.strArea}</h4>
     <h4>Category: ${mealData.strCategory}</h4>
     <h5>Ingredients:</h5>
@@ -62,6 +64,12 @@ const displayDetails=mealData=>{
     <li>${mealData.strIngredient7}</li>
     <li>${mealData.strIngredient8}</li>
     </ul>
+    </div>
+    <div class="col-6">
+    <img src="${mealData.strMealThumb}" class="img-fluid w-100 rounded"/>
+    </div>
+    </div>
+    
     <div class="description">
     <p class='desc_text'>${mealData.strInstructions}</p>
     </div>
